@@ -1,6 +1,6 @@
 first_name ="stella"
 last_name = "agbadu"
-full_name = first_name + " " + last_name
+#ull_name = first_name + " " + last_name
 
 #print(full_name[7:15:2])#string slicing
 
@@ -25,16 +25,16 @@ full_name = first_name + " " + last_name
 #startwithmethod
 
 name = "stella is fine"
-#print(name.startswith("s"))
+print(name.startswith("s"))
 
 
-name= "my file.pdf".upper()
+#name= "my file.pdf".upper()
 #print(name.endswith ("pdf"))
 #split method
 p = " "
-print(p.isspace())
-fulname = "stella, agbadu, chika"
-final_name = fulname.split(',')
+#print(p.isspace())
+#fulname = "stella, agbadu, chika"
+#final_name = fulname.split(',')
 #print(final_name)
 
 #join method every item in that iterable must be a string in order to use join.
@@ -43,9 +43,9 @@ final_name = fulname.split(',')
 #write a program to change "i am a boy" to "i-am-a-boy"
 
 
-sentence = "i am a boy"
-final = sentence.split()
-word = "-".join(final)
+#sentence = "i am a boy"
+#final = sentence.split()
+#word = "-".join(final)
 #print(word)
 
 
@@ -69,17 +69,30 @@ word = "-".join(final)
 #print(sentence)
 
 #correction.
-a = "this is my name, say my name and always say my name"
-b = input("enter your input:\n>").lower
-print(f"{a.count(b)} found")
-answer = a.replace(b,b.upper())
-print(answer)
+#a = "this is my name, say my name and always say my name"
+#b = input("enter your input:\n>").lower
+#print(f"{a.count(b)} found")
+#answer = a.replace(b,b.upper())
+#print(answer)
 
 #given two string s1 and s2; create a new string by appending s2 in the middle of s1
+#new_string = "blue sky"
+#print(new_string[2: 8: 2])
 
 
+# mini_string= "isabela"
+# next_string ="The {} is getting tiresome".format(mini_string)
+# #print(next_string)
+# mini_tape = "isabela "
+# our_tapes= f" The {mini_tape}is getting tiresome"
+# print(our_tapes)
 
+word = "this is my name, say my name, ensure my name is said always".lower()
 
+actual_word = input("enter the word here:").lower()
+print(f"{word.count(actual_word)} found")
+my_answer = word.replace(actual_word, actual_word .upper())#here we are replacing the actual word with uppercase thats why we 
+print(my_answer)#have it twicw.
 
 
 
