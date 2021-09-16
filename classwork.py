@@ -24,8 +24,8 @@ last_name = "agbadu"
 
 #startwithmethod
 
-name = "stella is fine"
-print(name.startswith("s"))
+#name = "stella is fine"
+#print(name.startswith("s"))
 
 
 #name= "my file.pdf".upper()
@@ -50,9 +50,9 @@ p = " "
 
 
 
-#word_list =['stella', ' agbadu', ' chika']
-#joining = "".join(word_list)
-#print(joining)
+word_list =['stella', ' agbadu', ' chika']
+joining = "".join(word_list)
+print(joining)
 
 #the replace method is used to replace the old method to new one 
 #word ="i am a boy"
@@ -87,12 +87,12 @@ p = " "
 # our_tapes= f" The {mini_tape}is getting tiresome"
 # print(our_tapes)
 
-word = "this is my name, say my name, ensure my name is said always".lower()
+#word = "this is my name, say my name, ensure my name is said always".lower()
 
-actual_word = input("enter the word here:").lower()
-print(f"{word.count(actual_word)} found")
-my_answer = word.replace(actual_word, actual_word .upper())#here we are replacing the actual word with uppercase thats why we 
-print(my_answer)#have it twicw.
+#actual_word = input("enter the word here:").lower()
+#print(f"{word.count(actual_word)} found")
+#my_answer = word.replace(actual_word, actual_word .upper())#here we are replacing the actual word with uppercase thats why we 
+#print(my_answer)#have it twicw., it prints the entirevword then capitalize the input.
 
 
 
