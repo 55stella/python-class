@@ -1,6 +1,6 @@
 # s1 = "Ault"
 # s2 = "kelly"
-# s3 = s1.find("lt")
+
 # result = s1[:s3] + s2 + s1[s3:]
 # print(result)
 # #print(s1[0:2]+s2 +s1[-2:])
@@ -31,4 +31,6 @@ s2 = "Xyz"
 #print(s3)
 
 
-
+a = 10
+a=a%3
+print(a)
