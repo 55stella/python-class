@@ -8,16 +8,16 @@
 # full_list = a + b
 # #print(full_list)#similar to concatination in strings
 
-#a = [8,7,2,4]
+# a = [8,7,2,4]
 # b =[4,2,9,0]
 
-#a.append(12)
-#print(a)
-# a.extend(b)
+# #a.append(12)
 # #print(a)
-# #create a new list of userNames. then write a program to input from user. requesting for his first and last name. generate a user
-# #name for him. the username should comprise of the first 3 words of his lastname and thr last two words of his first name. add this
-# #to his user name to the list of the username and print an ouput telling him an account has been created
+# a.extend(b)
+# print(a)
+# # #create a new list of userNames. then write a program to input from user. requesting for his first and last name. generate a user
+# # #name for him. the username should comprise of the first 3 words of his lastname and thr last two words of his first name. add this
+# # #to his user name to the list of the username and print an ouput telling him an account has been created
 
 # usernames=["stella,", "chika", "agbadu","bella1"]
 # first_name = input("enter your firstname here:").title()
@@ -32,19 +32,20 @@
 # #given the list below:
 # a=[500, 200,[200, 500,700,[250,800],250],[1000]] #add 700 and 800 to the end of the list.
 
-# b = a[2]
-# total = b[2]
-# c= a[3]
-# total2 = c[0]
-# answer = total + total2
-# a[3].append(answer)
-# print(a)
+# b = a[2][2]
+
+# c= a[2][3][1]
+# answer = b+c
+# a3 =a[3]
+# a3.append(answer)
+
+#print(a)
 # #exercise 2
 # #find the last position of a substring "emma" in a given string
 # str1 = "Emma is a data scientist who knows python. Emma works at google."
 # a = str1.rindex("Emma")# used to find the right index of a string. you can also use rfind method to find the left index
-# #print(a)#note there is nothing like lfind
-# #copy method
+# print(a)#note there is nothing like lfind
+#copy method
 # a_list =[1, 2, 4,6]
 # b = a_list
 # c =a_list.copy()
@@ -57,22 +58,21 @@
 # print(c)
 # print(d)
 
-# ##remove and pop
+##remove and pop
 # a =[0,1,2,3,4] 
-# a.remove(4)
-# #print(a)
-
+# a.remove(1)
+# print(a)
 # a = [0,1,2,3,4]
 
 # popped_element = a.pop(-1)
 # print(popped_element)
-# #pop removes an element and pops it ou. it returns the value so that we can store it.
+ #pop removes an element and pops it ou. it returns the value so that we can store it.
 
 #insert - takes elemnt and insert into a specified position in a list.
-list_ = [567,890,5678,]
-print(list_)
-list_.insert(1, "i just got inserted")
-print(list_)
+#list_ = [567,890,5678,]
+#print(list_)
+#list_.insert(1, "i just got inserted")
+#print(list_)
 
 
 
@@ -104,7 +104,7 @@ print(list_)
 # del  samplelist[0:6]
 # print(samplelist)
 # alist =[5,10,15,25]
-# print(alist[::-2])
+# print(alist[::-2])#:: helps to pick steps in a string.
 # reslist =[x+y for x in ["hello", "Good"  ] for y in ["dear","bye "]]
 # print(reslist)
     
@@ -121,9 +121,14 @@ print(list_)
 
 # print(x)
 
-a = [81, 82, 83]
+# a = [81, 82, 83]
 	
-b = a[:]       # make a clone using slice
-print(a == b)
-print(a is b)
-print(b)
+# b = a[:]       # make a clone using slice
+# print(a == b)
+# print(a is b)
+# print(b)
+# toppings = ['pepperoni', 'sausage', 'mushroom']
+# toppings.pop(1)
+# print(toppings)
+# total = toppings.pop(1)
+# print(total)

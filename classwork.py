@@ -1,8 +1,9 @@
 first_name ="stella"
 last_name = "agbadu"
-#ull_name = first_name + " " + last_name
+full_name = first_name + " " + last_name
 
-#print(full_name[7:15:2])#string slicing
+print(full_name[-6:])#string slicing
+# or print(full_name[6:13])
 
 
 #formatting
@@ -31,7 +32,7 @@ last_name = "agbadu"
 #name= "my file.pdf".upper()
 #print(name.endswith ("pdf"))
 #split method
-p = " "
+# p = " "
 #print(p.isspace())
 #fulname = "stella, agbadu, chika"
 #final_name = fulname.split(',')
@@ -43,16 +44,16 @@ p = " "
 #write a program to change "i am a boy" to "i-am-a-boy"
 
 
-#sentence = "i am a boy"
-#final = sentence.split()
+sentence = "come to me"
+final = sentence.split('')
 #word = "-".join(final)
-#print(word)
+print(final)
 
 
 
-word_list =['stella', ' agbadu', ' chika']
-joining = "".join(word_list)
-print(joining)
+# word_list =['stella', ' agbadu', ' chika']
+# joining = "".join(word_list)
+# print(joining)
 
 #the replace method is used to replace the old method to new one 
 #word ="i am a boy"
@@ -69,11 +70,11 @@ print(joining)
 #print(sentence)
 
 #correction.
-#a = "this is my name, say my name and always say my name"
-#b = input("enter your input:\n>").lower
-#print(f"{a.count(b)} found")
-#answer = a.replace(b,b.upper())
-#print(answer)
+# a = "this is my name, say my name and always say my name"
+# b = input("enter your input:\n").lower()
+# print(f"{a.count(b)} found")
+# answer = a.replace(b,b.upper())
+# print(answer)
 
 #given two string s1 and s2; create a new string by appending s2 in the middle of s1
 #new_string = "blue sky"
