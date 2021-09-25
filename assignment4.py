@@ -8,6 +8,6 @@ second_newspaper = input()
 split_set1 = set(first_newspaper.split())
 split_set2= set(second_newspaper.split())
 final = split_set1.intersection(split_set2)
-#print(final)
-#print(len(final))
-print(split_set1)
+print(final)
+
+
