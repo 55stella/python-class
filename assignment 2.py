@@ -32,3 +32,7 @@
 
 
 
+artists = ["Ed Sheeran", "Usher", "Oxlade"]      
+output = enumerate(artists)         
+print(list(output))
+
