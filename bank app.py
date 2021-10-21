@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
  
         
@@ -99,6 +100,76 @@ while  running:
             
             print("enter your login details below")
             
+=======
+import time
+import random
+import re
+import ast
+customer_details ={}
+transactions={}
+running =True
+
+def   update_transactions(amount, trans, type, account_numb):
+       trans_data ={
+       "amount":amount,
+       "type": type,
+       "trans": trans
+       }
+       transactions[account_numb].append(trans_data)
+while  running:
+       activity = input('enter signup to signup and any other key to log in\n')
+       if activity == "signup":
+         
+         pin =input("plesae enter your pin here:\n")
+            
+         pattern =r'[a-zA-Z]'
+         if re.search(pattern,pin):
+             print('pin must consist of numbers')
+             continue
+             
+         elif len(pin) < 4:
+             print('pin must not be less than four')
+             continue
+            
+         else:
+             name = input("enter your name here:\n")
+        
+            
+           
+         a  = list(range(10))
+         random.shuffle(a)
+         account_numb="".join(str(i)for i in a)
+         customer_details[account_numb] ={}
+         customer_details[account_numb]["pin"]=pin
+         customer_details[account_numb]['name']=name
+         customer_details[account_numb]["balance"]=0
+         
+         transactions[account_numb] = []
+         print(transactions)
+         with open('bank_app.text', 'w')as stella:
+                 for key, value in customer_details.items():
+                    stella.write('%s:%s\n' %(key, value))
+         with open('bank_app.text', 'r') as john:
+             for key, value in customer_details.items():
+              baby = john.read()
+              a = ast.literal_eval(baby)
+
+
+        
+         print(customer_details)
+               
+        
+         print(f"Congratulations, {name} your account has been created.your account number is {account_numb}")
+         continue
+
+    
+       else:
+        
+        
+        
+        print("enter your login details below")
+         
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
          
          
              
@@ -126,7 +197,11 @@ while  running:
 
      
 
+<<<<<<< HEAD
              Press any other key to logout\n>>""").lower()
+=======
+             Press any other key to quit\n>>""").lower()
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
              
              
              
@@ -161,10 +236,20 @@ while  running:
                    
                 #   print(customer_details)
                   update_transactions(amount, 'credit', 'Deposit', account_numb)
+<<<<<<< HEAD
                   write_to_file('transaction', transactions)                  
 
                   
                   
+=======
+                  with open('bank_app.text','a')as stella:
+                      for key, value in transactions.items():
+                          stella.write('%s:%s\n' %(key,value))
+                  with open ('bank_app.text','r') as john:
+                       baby = john.read()
+                       a = ast.literal_eval(baby)
+                        
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
                       
                   print(customer_details)
                   print(transactions)
@@ -225,10 +310,22 @@ while  running:
                     # print(transactions)
 
                      update_transactions(amount, 'Debit', 'withdrawals', account_numb)
+<<<<<<< HEAD
                      write_to_file('transaction', customer_details)                  
 
                      
                      
+=======
+                     
+                     with open('bank_app.text', 'a') as stella:
+                        for key, value in transactions.items():
+                            stella.write("%s:%s\n" %(key, value))
+                     with open('bank_app.text', 'r') as john:
+                        for key, value in transactions.items():
+                         baby = john.read()
+                         a = ast.literal_eval(baby)
+                                 
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
                      print(transactions)
                      print(customer_details)
 
@@ -260,7 +357,16 @@ while  running:
                 
                   else:
                    customer_details[account_numb]['balance']-=amount
+<<<<<<< HEAD
                    
+=======
+                   with open('bank_app.text', 'a')as stella:
+                       for key, value in transactions.items():
+                           stella.write('%s:%s\n' %(key,value))
+                   with open('bank_app.text', 'r') as john:
+                       baby = john.read()
+                       a = ast.literal_eval
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
 
                 #    trans_data = {
                 #        'amount':amount,
@@ -270,10 +376,21 @@ while  running:
                 #    transactions[account_numb].append(trans_data)#here we are saving the transaction details 
                    #into a dictionary transaction. remember we assigned our transaction[account _num]to a list.
                    update_transactions(amount, 'debit', 'transfer', account_numb)
+<<<<<<< HEAD
                    write_to_file('transaction', transactions)                  
 
                    reciever['balance']+=amount
                    
+=======
+                   reciever['balance']+=amount
+                   with open('bank_app.text', 'a') as stella:
+                       for key, value in transactions. items():
+                           stella.write('%s:%s\n' %(key,value))
+                   with open('bank_app.text', 'a') as john:
+                      baby = john.read()
+                      a = ast.literal_eval(baby)
+
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
                    print("transfer successful")
                    print(customer_details)
                    print(transactions)
@@ -284,8 +401,11 @@ while  running:
                 #    }
                 #    transactions[account_numb].append(beneficiary_trans_data)
                    update_transactions(amount, 'credit', 'transfer', reciever_account)
+<<<<<<< HEAD
                    write_to_file('transaction', transactions)                  
 
+=======
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
                    print(transactions)
          
            
@@ -308,8 +428,12 @@ while  running:
                          #for loop.
                  else:
                      print('enter a valid account number and pin')
+<<<<<<< HEAD
              else:
                     break     
+=======
+
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
 
              
 
@@ -376,12 +500,21 @@ while  running:
 #                     print("Insufficiant funds")
 #                     print("Session Expired")
                     
+<<<<<<< HEAD
 # #                     progress = input("Enter p to do something else and any key to quit.\n>>").lower()
 # #                     if progress == 'p':
 # #                         continue
 # #                     else:
 # #                         break
 # #                 else:
+=======
+#                     progress = input("Enter p to do something else and any key to quit.\n>>").lower()
+#                     if progress == 'p':
+#                         continue
+#                     else:
+#                         break
+#                 else:
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
 #                     account_details['balance']-=amount
 #                     print('Please take your cash')
 #                     progress = input("Enter p to do something else and any key to quit.\n>>").lower()
@@ -428,6 +561,7 @@ while  running:
                 
 #         else:
 #             print("Please enter a valid account number and pin")
+<<<<<<< HEAD
 
 # import random
 # import time
@@ -600,3 +734,5 @@ while  running:
 
 
 
+=======
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10

@@ -1,4 +1,5 @@
 #soln
+<<<<<<< HEAD
 # num_subscriptin =int(input())
 # first_newspaper = input()
 # num_subscription2 =int(input())
@@ -42,3 +43,17 @@ if player_choice in choices:
         print("its a tie!")
 else:
     print("invalid input. you loose!")        
+=======
+num_subscriptin =input()
+first_newspaper =input()
+num_subscription2 =input()
+second_newspaper = input()
+
+
+split_set1 = set(first_newspaper.split())
+split_set2= set(second_newspaper.split())
+final = split_set1.intersection(split_set2)
+print(final)
+
+
+>>>>>>> 40dc77f9520af49eb7bd9e062e87ced3daeadf10
