@@ -32,7 +32,14 @@
 
 
 
-artists = ["Ed Sheeran", "Usher", "Oxlade"]      
-output = enumerate(artists)         
-print(list(output))
+# artists = ["Ed Sheeran", "Usher", "Oxlade"]      
+# output = enumerate(artists)         
+# print(list(output))
+import random
+a = [str(i)for i in range(10)]
+    
 
+# acc = ['9']
+
+# acc.extend([random.choice(num) for i in range(9)])
+# account_num = "".join(acc)

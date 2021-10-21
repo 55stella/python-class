@@ -6,13 +6,13 @@
 # a = [3,6,7]
 # b= [8,9,10]
 # full_list = a + b
-# #print(full_list)#similar to concatination in strings
+# print(full_list)#similar to concatination in strings
 
 # a = [8,7,2,4]
 # b =[4,2,9,0]
 
-# #a.append(12)
-# #print(a)
+# # #a.append(12)
+# # #print(a)
 # a.extend(b)
 # print(a)
 # # #create a new list of userNames. then write a program to input from user. requesting for his first and last name. generate a user
@@ -56,7 +56,7 @@
 
 # print(b)
 # print(c)
-# print(d)
+# # print(d)
 
 ##remove and pop
 # a =[0,1,2,3,4] 
@@ -66,13 +66,13 @@
 
 # popped_element = a.pop(-1)
 # print(popped_element)
- #pop removes an element and pops it ou. it returns the value so that we can store it.
+# #  pop removes an element and pops it ou. it returns the value so that we can store it.
 
 #insert - takes elemnt and insert into a specified position in a list.
-#list_ = [567,890,5678,]
-#print(list_)
-#list_.insert(1, "i just got inserted")
-#print(list_)
+# list_ = [567,890,5678,]
+# print(list_)
+# list_.insert(1, "i just got inserted")
+# print(list_)
 
 
 
@@ -98,13 +98,14 @@
 # print(str1.count(sub,4))
 # mystring = "pynative"
 # l = [None]*10
-#print(l)
-#print(len(l))
+# # print(l)
+# # print(len(l))
 # samplelist = [10,20,30,40]
 # del  samplelist[0:6]
 # print(samplelist)
 # alist =[5,10,15,25]
-# print(alist[::-2])#:: helps to pick steps in a string.
+# print(alist[::-3])#:: helps to pick steps in a string.
+# #list comprehension
 # reslist =[x+y for x in ["hello", "Good"  ] for y in ["dear","bye "]]
 # print(reslist)
     
@@ -121,14 +122,14 @@
 
 # print(x)
 
-# a = [81, 82, 83]
+a = [81, 82, 83]
 	
-# b = a[:]       # make a clone using slice
-# print(a == b)
-# print(a is b)
-# print(b)
-# toppings = ['pepperoni', 'sausage', 'mushroom']
-# toppings.pop(1)
-# print(toppings)
-# total = toppings.pop(1)
-# print(total)
+b = a[:]       # make a clone using slice
+print(a == b)
+print(a is b)
+print(b)
+toppings = ['pepperoni', 'sausage', 'mushroom']
+toppings.pop(1)
+print(toppings)
+total = toppings.pop(1)
+print(total)

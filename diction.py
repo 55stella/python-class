@@ -1,5 +1,5 @@
 # to chamge the value of a dictionary
-my_diction = {"pet": "dog","color":"Brown"}
+#my_diction = {"pet": "dog","color":"Brown"}
 # my_diction["color"] = "yellow"
 # a= my_diction.keys()
 # b = my_diction.get("pet")
@@ -17,7 +17,7 @@ my_diction = {"pet": "dog","color":"Brown"}
 #pop
 
 #to get all the keys availabel in a dictionary
-my_dict ={"name": "jerry", "courses":["Data science", "Backend"], "scores":{"data science": 20,"backend":15.7,},}
+#my_dict ={"name": "jerry", "courses":["Data science", "Backend"], "scores":{"data science": 20,"backend":15.7,},}
 # print(my_dict.get("name"))# the get is a default key assigned to the database incase its not found.
 # my_dict["course"] = "computer"
 # print(my_dict)
@@ -32,19 +32,19 @@ my_dict ={"name": "jerry", "courses":["Data science", "Backend"], "scores":{"dat
 # my_dict.update({"result":var})
 #my_dict["result"]=var
 
-print(my_dict)
+#print(my_dict)
 
 # #print(my_dict)
 
 #items always return a list of tuples. grouping of key value pair in tuples
 #updates
 #we are updating one particular dictionary with another dictionary
-# my_dictionary ={"name":"john", "gender":"MALE"}
-# #my_dictionary.update({"name":"value"})
+my_dictionary ={"name":"john", "gender":"MALE"}
+#my_dictionary.update({"school":"value"})
 # my_dictionary["name"] = "stella"
-# list_of_tuples = [("john", "Abuja"),("nigeria","canada")]
-# my_dictionary.update(list_of_tuples)
-# print(my_dictionary)
+list_of_tuples = [("john", "Abuja"),("nigeria","canada")]
+my_dictionary.update(list_of_tuples)
+print(my_dictionary)
 # # my_dictionary.update({"key":"value"})
 # # print(my_dictionary)
 #print(my_dictionary.get("bull", "not found"))
@@ -171,7 +171,7 @@ print(my_dict)
 
 # print(c)
 a = [1,2,3,4,5]
-b = "".join(str(e)for e in a)
+b = "".join(str(i)for i in a)
 print(b)
 
     
